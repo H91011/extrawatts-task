@@ -1,0 +1,77 @@
+@import "./colors"
+@import "./font"
+
+.card
+    background-color: $card-body
+    display: flex
+    flex-direction: column
+    height: 680
+
+.cardInfo
+    width: 100%
+    height: 100%
+    display: flex
+
+.nftTitle
+    @include tFont($size:20px, $lHeight: 28px, $fWeight: 600)
+    color: $card-title
+    margin-top: 0px
+
+.subTitle
+    @include tFont($fFamily:$font2 ,$size:19px, $lHeight: 22px, $fWeight: normal)
+    color: $category-color
+    line-height: 0px !important
+
+.opacity
+    opacity: 0.5
+
+.cardColl1
+    width: 60%
+    padding: 20px 0px 0px 0px
+    margin-left: 30px
+
+.cardColl2
+    width: 40%
+    p
+        text-align: right
+        margin-left: 50%
+        line-height: 0px !important
+        right: 20px
+        position: relative
+    span
+        margin-top: 20px !important
+        float: right
+        right: 30px
+
+.cardPrice
+    margin-top: 15px
+    padding: 0px 0px 0px 30px
+    width: 100%
+
+.cardButton
+    padding: 20px 0px 0px 30px
+    display: flex
+    gap: 20px
+
+.priceETH
+    @include tFont($fFamily:$font ,$size:30px, $lHeight: 40px, $fWeight: 600)
+    color: $eth-color
+
+.priceUSDT
+    @include tFont($fFamily:$font2 ,$size:19px, $lHeight: 22px)
+    color: $usdt-color
+    margin-top: -35px
+
+.buyButton
+    @include tFont($fFamily:$font2 ,$size:13px, $lHeight: 20px)
+    background-color: $button-buy-color
+    color: $button-text-color1
+    padding: 10px 40px
+    border: 1px solid $button-border-color
+
+.infoButton
+    @include tFont($fFamily:$font2 ,$size:13px, $lHeight: 20px)
+    background-color: $button-info-color
+    color: $button-text-color2
+    padding: 10px 40px
+    border: 1px solid $button-border-color
