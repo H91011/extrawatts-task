@@ -35,7 +35,7 @@ export default function Card({ info, categories }) {
             className={[styles.subTitle, styles.cardColl2].join(" ")}
             style={{ marginTop: "100px" }}
           >
-            16
+            {info.weight}
           </p>
           <p
             className={[styles.subTitle, styles.opacity, styles.cardColl2].join(

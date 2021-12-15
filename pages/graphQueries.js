@@ -7,6 +7,7 @@ function cardQuery(first, skip = 0) {
             image
             category_id
             description
+            weight
         }
 
         categoryEntities {
